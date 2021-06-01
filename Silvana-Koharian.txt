@@ -1,0 +1,163 @@
+    
+ https://codepen.io/silvanakoh/pen/VwpydPR?editors=1100   
+    
+    
+    
+    
+    1. What is Semantic HTML? 
+Semantic HTML or semantic HTML elements are the elements that bring meaning to the we and the developer. 
+For example 
+<header> coming from the word “head” means that anything in that element should go on the top of the page.
+<body> means that anything in this element should be located in the middle of the web page.
+<footer> means that anything in this element should be located on the bottom of the web page.
+
+    2. What is HTML used for? 
+HTML provides the structure of our website. 
+
+    3. What is an attribute and where do we put it?
+The attribute provides additional information (characteristics or properties)about the specific element. We put the attribute in the stat tag.
+For example:
+<a href="#">  href is the attribute
+<p style="color:red;"> style is the attribute
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+h1 is a heading element and can be used only once in our web page.
+
+    5. Name two tags that have required attributes
+<img> and <a>
+
+    6. What do we put in the head of our HTML document? 
+<head > is an element that provides information/matadata to the browsers, search engines, bots, etc. about the document.
+The <head> element includes  <meta> , <link> , <title> , <style> , <script> , <noscript> , and <base >.
+The information inside the <head> element is not visible on the web page. 
+
+    7. What is an id? 
+Id is an attribute and we can’t have more than one element with the same id value.
+
+    8. What elements can I add an id to? 
+We use “id” for elements that we will use mostly for function, and “class” for styling since we can’t home one “id” in multiple elements.
+I would use “id” attribute for <footer>; 
+
+    9. How many times can I use the same id on a page? 
+One time only!
+
+    10. What is a class? 
+Class is an attribute.
+    11. What elements can I add a class to? 
+Elements that we would like to style.
+
+    12. How many times can I use the same class on a page? 
+Many/more than once.
+
+    13. How do I get my link to open in a new tab?
+With the  target= ”_blanck”   attribute.
+
+    14. What is the alt attribute in the image tag used for? 
+Alt = alternative. This attribute is used for alternative information about the image. For example in case of slow loading.
+
+    15. How do I reference an id?
+We reference an id with # and the value of the id
+Example 
+HTML  … <div id=”container”>
+CSS   #container { color: blue }
+
+    16. What is the difference between a section and a div
+<section> is used to group many elements with the same meaning, for example chapters.
+<div> represents it’s child and doesn't have meaning.
+
+    17. What is CSS used for? 
+Styling 
+
+    18. How do we select an element? Example - every h2 on the page
+CSS   h2{ background-color: yellow; }
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+We can use the same class with multiple elements and only once an id.
+<nav id=”menu”> <p class=”text”>
+
+    20. How do we select classes in CSS?
+With a period before the value of the class.
+HTML      <p class=”text”>
+CSS          .text { font-size: 30px;}
+
+    21. How do we select a p element with a single class of “human””?
+p .human or just .human since the element has a single class.
+
+    22. What is a parent child selector? When would this be useful? 
+The example in 21 is parent child selector. It's useful to target a specific element within another element and/or when we have the same class for multiple elements.
+
+    23. How do you select all links within a div with the class of sidebar?
+div .sidebar
+
+    24. What is a pseudo selector?
+Selector that selects elements that are in a specific state like :hover.
+
+    25. What do we use to change the spacing between lines?
+<br>; line-height
+
+    26. What do we use to change the spacing between letters?
+Letter-spacing
+
+    27. What do we use to change everything to CAPITALS? lowercase? Capitalize?
+Text-transform: uppercase;
+Text-transform: lowercase;
+Text-transform: capitalize;
+
+    28. How do I add a 1px border around my div that is dotted and black?
+div { border: dotted 1px black; }
+
+
+    29. How do I select everything on the page? 
+*{ }
+
+    30. How do I write a comment in CSS?
+/* this is a comment*/
+
+    31. How do I find out what file I am in, when I am using the command line? 
+Pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+Ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm -i filename     REMOVES THE FILE FOREVER!
+
+    34. Why should I use version control? 
+To truck changes of the project.
+
+    35. How often should I commit to github?
+Every 20 min.
+    36. What is the command we would use to push our repo up to github? 
+Git push origin (name)
+
+    37. Walk me through Lambda's git flow. 
+Fork project in github
+copy/clone 
+Branch
+Work on file
+Commit - m “list changes”
+Push 
+Pull request
+Submit link
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+Block element <div> always starts on a new line
+Inline element <span> does NOT start on a new line.
+
+    2. What happens when an element is positioned absolutely? 
+We place any page element exactly where we want it. We use the positioning attributes top, left, bottom, and right to set the location.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+Display:flex;
+Flex-grow;
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+Block - <h1>; <p>; <div>
+Inline - <a>; <img>
+Inline-block - <span>
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+Box model is the visualization and the layout of the web page  margin, border, padding, content.
